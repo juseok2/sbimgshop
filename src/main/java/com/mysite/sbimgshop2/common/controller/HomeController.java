@@ -17,4 +17,9 @@ public class HomeController {
         model.addAttribute("date", formattedDate);
         return "common/home";
     }
+    
+    @GetMapping("/codegroups/form")
+    public String form() {
+        return "codegroups/home";
+    }
 }
